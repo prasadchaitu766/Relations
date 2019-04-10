@@ -1,0 +1,22 @@
+<table align="center">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+{% block skill %}
+{% for subskill in subskills %}
+    <tr>
+
+    <td>{{subskill.name}}</td>
+    <td>{{ subskill.link }}</td>
+    <td>{{ subskill.skill }}</td>
+    <td>{{ subskill.created_at }}</td>
+    </tr>
+{% endfor %}
+{% endblock skill %}
+</table>
